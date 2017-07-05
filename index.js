@@ -8,7 +8,7 @@ TEXT_EXTENSION = ".txt";
 TOKEN = "";
 
 var list_posts = function(file) {
-    var extension = path.extname(file);
+    var extension = path.extname(file).toLowerCase();
     var textFile = file.replace(new RegExp(extension + '$'), TEXT_EXTENSION);
     var text = "#bible #truth 🙏";
 
