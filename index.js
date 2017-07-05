@@ -25,7 +25,7 @@ var list_posts = function(file) {
 
 process.argv.forEach(function (val, index, array) {
     if (index === 2) {
-        console.log(val)
-        // list_posts(val);
+        // console.log(val)
+        list_posts(val);
     }
 });
