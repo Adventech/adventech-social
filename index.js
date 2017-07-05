@@ -8,7 +8,7 @@ TEXT_EXTENSION = ".txt";
 
 var list_posts = function(file) {
     var extension = path.extname(file);
-    var textFile = path.replace(new RegExp(extension + '$'), TEXT_EXTENSION);
+    var textFile = file.replace(new RegExp(extension + '$'), TEXT_EXTENSION);
     var text = "";
 
     if (extension !== MEDIA_EXTENSION_PNG
@@ -25,6 +25,7 @@ var list_posts = function(file) {
 
 process.argv.forEach(function (val, index, array) {
     if (index === 2) {
-        list_posts(val);
+        console.log(val)
+        // list_posts(val);
     }
 });
