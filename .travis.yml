@@ -1,0 +1,7 @@
+language: node_js
+node_js:
+- '5'
+script: git diff --name-only $TRAVIS_COMMIT_RANGE | xargs -I '{}' node index.js $BUFFER_TOKEN '{}'
+env:
+  global:
+    secure: H7kiVLIEjgIWGdztPll/h9BfyD71hTJ+aku7QV63ViqNUfiFoiLEAA2VylEuuM9tMKUzUT1oiBL3x3m0gGJI76TX2G4pqBEbvofKlgJ4SMk7mfnGB5t/OXRZhZXuUIR/Apnlhb4qJMQ9U55qAEgEQ/gqj7UYSCWyQ+u0uwkfXwXuqtW8E48hdfuAqTJjtnwUAPd9gGgEFpkEIJXnh+3LmUhPxc7Ojqttr0E6ar8tJvE+O6egtHBwXiJgLA/1rtm5kPfPTF55lQW7JB3gZzkHeho97mXoU2AiIPmtenwMSzxkVyvir49YkNOF8qqqiEbVolfiTGyIs4bJZ4aETBjkhpvzRSM7bVEsszhx5dxtyAhPTmu5tOaSzLIZIEpxbhx6Wft8tcIv+wsIY7nqTrUkWtpq1ALU6klxJiInxlMBpbprFk3N1Gkk+uzrUqzmqjtK1zh4ltZVXXh6H3o2UU1EbTXzKbRYzl3dK2uFjmYsSPxYpLHfGxVnA+Tvqk7m1LiZWSqGFQ7Uu2JJFeeWvSFBrKPpVbkY27/13WfHxEI34/uy5bUG2kTM3CFI56shQSg+rZS8baSRi/46sJvvobvaoRp/ukIEZgxR/N8phiUAY07jEaZEruCNELIZhiq+emgxj264KZfOW07xssgOoYX6UxS2Ixb10zCwPq2SQT+uhb8=
