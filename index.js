@@ -10,7 +10,7 @@ TOKEN = "";
 var list_posts = function(file) {
     var extension = path.extname(file);
     var textFile = file.replace(new RegExp(extension + '$'), TEXT_EXTENSION);
-    var text = "";
+    var text = "#bible #truth 🙏";
 
     if (extension !== MEDIA_EXTENSION_PNG
         && extension !== MEDIA_EXTENSION_JPG) return;
