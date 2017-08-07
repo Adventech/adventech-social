@@ -1,7 +1,6 @@
 var path = require("path"),
     request = require("request"),
-    fs = require("fs"),
-    twitter = require("twitter-text");
+    fs = require("fs");
 
 MEDIA_EXTENSION_PNG = ".png";
 MEDIA_EXTENSION_JPG = ".jpg";
@@ -24,7 +23,7 @@ var list_posts = function(file) {
         twitterProfile = '';
 
 
-    if (twitter.getTweetLength(text) <= 140){
+    if (text.length <= 140){
         twitterProfile = "&profile_ids%5B%5D=586a77ecb6684f0f219b2bf7";
     }
 
